@@ -8,6 +8,7 @@ Since Firefox bookmarks support tags, but many other browsers do not, this scrip
 
 For example, a bookmark like this:
 
+```html
 <DT><A HREF="..." TAGS="chatgpt,dev tools">Using ChatGPT</A>
 ```
 
