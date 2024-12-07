@@ -1,14 +1,13 @@
 # Bookmark Tag Processor
 
-A simple Node.js script that processes HTML bookmark files and appends tags to bookmark titles.
+A Node.js script that extracts tags from Firefox bookmarks and appends them to bookmark titles.
 
 ## Description
 
-This script takes an HTML bookmarks file (like those exported from browsers) and modifies bookmark titles to include their tags at the end. It's useful for making tags visible in the bookmark title itself.
+Since Firefox bookmarks support tags, but many other browsers do not, this script will extract the tags from the TAGS attribute and append them to the bookmark title so you can still search by them when importing into another browser.
 
 For example, a bookmark like this:
 
-```html
 <DT><A HREF="..." TAGS="chatgpt,dev tools">Using ChatGPT</A>
 ```
 
@@ -28,8 +27,8 @@ Will become:
 
 ## Usage
 
-1. Make sure you have Node.js installed
-2. Save your bookmarks as HTML from your browser
+1. Make sure you have Node.js installed `node -v` If not, install it from [nodejs.org](https://nodejs.org/)
+2. Export your bookmarks as HTML from your Firefox browser
 3. Run the script:
 
 ```bash
