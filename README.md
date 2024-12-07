@@ -1,4 +1,4 @@
-# Bookmark Tag Processor
+# Export FF Bookmark Tags
 
 A Node.js script that extracts tags from Firefox bookmarks and appends them to bookmark titles.
 
